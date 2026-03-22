@@ -219,9 +219,9 @@ export default function ContactPage() {
       {/* Owner Diary */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-96 md:h-[520px] overflow-hidden shadow-lg">
+          <div className="relative h-96 md:h-[520px] overflow-hidden ">
             <Image
-              src="/images/Owner.png"
+              src="/images/OwnerPic.jpg"
               alt="Founder of Aura Events"
               fill
               className="object-cover object-[35%_0%] md:object-center"
