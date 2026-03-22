@@ -38,8 +38,9 @@ export default function Footer() {
           <h4 className="text-[#C9A84C] text-sm tracking-widest uppercase mb-4 font-semibold">Contact</h4>
           <ul className="space-y-2 text-sm text-gray-400">
             <li>📍 Gurugram, Haryana, India</li>
+            <li>📞 +91 9116660157</li>
            
-            <li>✉️ contact@auraevents.in</li>
+            <li>✉️ planwithaura@gmail.com</li>
           </ul>
           <div className="flex gap-4 mt-5">
             {[

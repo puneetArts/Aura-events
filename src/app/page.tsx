@@ -80,7 +80,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/services"
-              className="bg-[#C9A84C] text-[#0F1F3D] font-bold tracking-widest uppercase px-8 py-4 hover:bg-[#e2c47a] transition-colors duration-200"
+              className="bg-[#C9A84C] text-[#0F1F3D] font-bold tracking-widest uppercase px-8 py-4 hover:bg-[#F8F5EF] transition-colors duration-200"
             >
               Explore Services
             </Link>

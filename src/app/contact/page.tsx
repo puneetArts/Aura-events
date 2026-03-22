@@ -136,7 +136,7 @@ export default function ContactPage() {
                   {
                     icon: "📞",
                     label: "Phone",
-                    value: "+91 XXXXX XXXXX",
+                    value: "+91 9116660157",
                   },
                   {
                     icon: "✉️",
@@ -224,7 +224,7 @@ export default function ContactPage() {
               src="/images/Owner.png"
               alt="Founder of Aura Events"
               fill
-              className="object-cover object-top"
+              className="object-cover object-[35%_0%] md:object-center"
             />
           </div>
           <div>
