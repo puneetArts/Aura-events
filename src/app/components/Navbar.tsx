@@ -39,7 +39,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/contact"
-              className="bg-[#C9A84C] text-[#0F1F3D] text-sm font-bold tracking-widest uppercase px-5 py-2 hover:bg-[#e2c47a] transition-colors duration-200"
+              className="bg-[#C9A84C] text-[#0F1F3D] text-sm font-bold tracking-widest uppercase px-5 py-2 hover:bg-[#F8F5EF] transition-colors duration-200"
             >
               Get a Quote
             </Link>

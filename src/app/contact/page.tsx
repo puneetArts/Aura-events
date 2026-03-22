@@ -29,7 +29,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14">
 
           {/* Form */}
-          <div className="bg-white p-10 shadow-md border-t-4 border-[#C9A84C]">
+          <div id="contact-form" className="bg-white p-10 shadow-md border-t-4 border-[#C9A84C]">
             <h2
               className="text-[#0F1F3D] text-3xl font-bold mb-2"
               style={{ fontFamily: "var(--font-playfair)" }}
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   {
                     icon: "📍",
                     label: "Address",
-                    value: "Gurugram, Haryana, India",
+                    value: "Ardee The Residency, Sector 52, Gurugram, Haryana 122003",
                   },
                   {
                     icon: "📞",
@@ -141,13 +141,9 @@ export default function ContactPage() {
                   {
                     icon: "✉️",
                     label: "Email",
-                    value: "contact@auraevents.in",
+                    value: "planwithaura@gmail.com",
                   },
-                  {
-                    icon: "👤",
-                    label: "Founder",
-                    value: "Prakriti Saxena",
-                  },
+                  
                   {
                     icon: "🕐",
                     label: "Working Hours",
@@ -177,7 +173,7 @@ export default function ContactPage() {
               />
               <div className="absolute inset-0 bg-[#0F1F3D]/40 flex items-center justify-center">
                 <a
-                  href="https://maps.google.com/?q=Sector+44,Gurugram,Haryana"
+                  href="https://maps.google.com/?q=Ardee+The+Residency+Apartments,+The+Residency,+C403,+Ardee+City+Gate+Number+2+Rd,+Ardee+City,+Sector+52,+Gurugram,+Haryana+122003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#C9A84C] text-[#0F1F3D] font-bold tracking-widest uppercase px-6 py-3 text-xs hover:bg-[#e2c47a] transition-colors duration-200"
@@ -195,8 +191,14 @@ export default function ContactPage() {
               <div className="flex gap-4 flex-wrap">
                 {[
                   { label: "LinkedIn", href: "https://www.linkedin.com/company/auraevents-india/" },
-                  { label: "Instagram", href: "#" },
-                  { label: "Facebook", href: "#" },
+                  {
+                    label: "Instagram",
+                    href: "https://www.instagram.com/auraevents.official?igsh=MTB3YWNpdTBvamN6Zg==",
+                  },
+                  {
+                    label: "Facebook",
+                    href: "https://www.facebook.com/share/14ZJCQ8UJCQ/",
+                  },
                 ].map((s) => (
                   <a
                     key={s.label}
@@ -210,6 +212,41 @@ export default function ContactPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Owner Diary */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-96 md:h-[520px] overflow-hidden shadow-lg">
+            <Image
+              src="/images/Owner.png"
+              alt="Founder of Aura Events"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <div>
+            <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase mb-3">Owner Diary</p>
+            <h2
+              className="text-[#0F1F3D] text-3xl md:text-4xl font-bold mb-4 leading-tight"
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              Founder, Prakriti Saxena
+            </h2>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              I'm Prakriti Saxena, the founder of Aura Events — Making Moments Grand. For me, events have always
+              been more than just planning and execution — they are about creating experiences that people remember
+              and feel. The idea behind Aura Events came from a simple belief: that every event, whether corporate or
+              community-driven, should be handled with clarity, care, and attention to detail. I naturally focus on
+              structure, organization, and responsibility, and I bring that into every event I work on. I believe in
+              keeping things transparent, managing every detail with precision, and ensuring that clients feel
+              confident and stress-free throughout the process. As I build Aura Events, my goal is to create a brand
+              that people can trust — not just for delivering events, but for delivering them with consistency and
+              sincerity. This is just the beginning of my journey, and I'm committed to learning, growing, and making
+              every moment truly grand.
+            </p>
           </div>
         </div>
       </section>

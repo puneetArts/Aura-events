@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import StatCounter from "./components/StatCounter";
 
 const services = [
   {
@@ -20,28 +21,28 @@ const services = [
 ];
 
 const stats = [
-  { value: "200+", label: "Events Delivered" },
-  { value: "80+", label: "Corporate Clients" },
-  { value: "15+", label: "NGO Partners" },
-  { value: "8+", label: "Years of Excellence" },
+  { value: "25+", label: "Events Delivered" },
+  { value: "10+", label: "Corporate Clients" },
+  { value: "06+", label: "NGO Partners" },
+  { value: "05+", label: "Years of Excellence" },
 ];
 
 const testimonials = [
   {
-    name: "XYZ",
-    role: "VP Operations, ABC Corp",
+    name: "Yuvraj Singh",
+    role: "President, Synexus Enterprises",
     quote:
       "Aura Events transformed our annual summit into an unforgettable experience. Flawless execution from start to finish.",
   },
   {
-    name: "XYZ",
-    role: "Director, XYZ Foundation",
+    name: "Ved Prakash",
+    role: "VP, Eagle Security Services",
     quote:
       "Their understanding of NGO sensibilities is remarkable. Our fundraiser exceeded all expectations thanks to the Aura team.",
   },
   {
-    name: "XYZ",
-    role: "Head of CSR, XYZ Group",
+    name: "Arvind Verma",
+    role: "MD, RK Services",
     quote:
       "Professional, creative, and deeply committed. Aura Events is our go-to partner for every CSR initiative.",
   },
@@ -56,12 +57,12 @@ export default function Home() {
           src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&q=85"
           alt="Aura Events Hero"
           fill
-          className="object-cover"
+          className="object-cover object-bottom"
           priority
         />
-        <div className="absolute inset-0 bg-[#0F1F3D]/70" />
+        <div className="absolute inset-0 bg-[#0F1F3D]/87" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C9A84C] text-sm tracking-[0.3em] uppercase mb-4 font-light">
+          <p className="text-[#C9A84C] text-sm tracking-[0.3em] uppercase mb-4 font-semibold">
             Gurugram, Haryana
           </p>
           <h1
@@ -84,8 +85,8 @@ export default function Home() {
               Explore Services
             </Link>
             <Link
-              href="/contact"
-              className="border border-white text-white font-light tracking-widest uppercase px-8 py-4 hover:bg-white hover:text-[#0F1F3D] transition-colors duration-200"
+              href="/contact#contact-form"
+              className="border border-white text-white font-light tracking-widest uppercase px-8 py-4 hover:bg-[#F8F5EF] hover:text-[#0F1F3D] transition-colors duration-200"
             >
               Get a Quote
             </Link>
@@ -113,7 +114,7 @@ export default function Home() {
                 className="text-[#C9A84C] text-4xl md:text-5xl font-bold mb-2"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                {s.value}
+                <StatCounter value={s.value} />
               </p>
               <p className="text-[#0F1F3D] text-sm tracking-widest uppercase font-medium">{s.label}</p>
             </div>
@@ -198,7 +199,7 @@ export default function Home() {
                 "Pan-India execution with Gurugram as our home base",
               ].map((point) => (
                 <li key={point} className="flex items-start gap-3 text-gray-600 text-sm leading-relaxed">
-                  <span className="text-[#C9A84C] mt-0.5 text-lg">✦</span>
+                  <span className="text-[#C9A84C] mt-1 text-lg leading-none">✦</span>
                   {point}
                 </li>
               ))}
@@ -260,7 +261,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="bg-[#C9A84C] text-[#0F1F3D] font-bold tracking-widest uppercase px-10 py-4 hover:bg-[#e2c47a] transition-colors duration-200 text-sm"
+            className="bg-[#C9A84C] text-[#0F1F3D] font-bold tracking-widest uppercase px-10 py-4 hover:bg-[#F8F5EF] transition-colors duration-200 text-sm"
           >
             Start Planning Today
           </Link>
