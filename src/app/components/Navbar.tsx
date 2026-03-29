@@ -6,6 +6,7 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/owner-diary", label: "Owner's Diary" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -16,9 +17,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#0F1F3D] shadow-lg">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-[#C9A84C] text-2xl font-bold tracking-widest uppercase">Aura</span>
-          <span className="text-white text-2xl font-light tracking-widest uppercase">Events</span>
+        <Link href="/" className="flex flex-col leading-none">
+          <span className="flex items-center gap-2">
+            <span className="text-[#C9A84C] text-2xl font-bold tracking-widest uppercase">Aura</span>
+            <span className="text-white text-2xl font-light tracking-widest uppercase">Events</span>
+          </span>
+          <span className="text-[#C9A84C] text-[10px] tracking-[0.3em] uppercase mt-1">
+            Making Moments Grand
+          </span>
         </Link>
 
         <ul className="hidden md:flex items-center gap-8">
